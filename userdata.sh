@@ -5,8 +5,8 @@ set -e -o pipefail
 NODE_NAME_PREFIX="" # prefix the node name with the role of the node, e.g. webserver or rails-app-server
 
 NODE_NAME="${NODE_NAME_PREFIX}$(curl --silent --show-error --retry 3 http://169.254.169.254/latest/meta-data/instance-id)" # this uses the EC2 instance ID as the node name
-CHEF_SERVER_NAME="HU-chef-server" # The name of your Chef Server
-CHEF_SERVER_ENDPOINT="hu-chef-server-ydqnhvgnriq7etfs.us-east-1.opsworks-cm.io" # The FQDN of your Chef Server
+CHEF_SERVER_NAME="HUChefServerDONOTSTOPORTERMINATE" # The name of your Chef Server
+CHEF_SERVER_ENDPOINT="huchefserverdonotstoporterminate-wd6zshi9b3iaf5fk.us-east-1.opsworks-cm.io" # The FQDN of your Chef Server
 REGION="us-east-1" # Region of your Chef Server (Choose one of our supported regions - us-east-1, us-east-2, us-west-1, us-west-2, eu-central-1, eu-west-1, ap-northeast-1, ap-southeast-1, ap-southeast-2)
 CHEF_CLIENT_VERSION="14.11.21" # latest if empty
 CHEF_CLIENT_LOG_LOCATION="/var/log/chef-client.log"
