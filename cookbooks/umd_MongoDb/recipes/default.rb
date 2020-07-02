@@ -1,5 +1,1 @@
-package "mongodb" do
- 
- action :install
- 
-end
+include_recipe "sc-mongodb::default"
