@@ -7,5 +7,5 @@ client_key               File.join(base_dir, '.chef', 'private.pem')
 syntax_check_cache_path  File.join(base_dir, '.chef', 'syntax_check_cache')
 cookbook_path            [File.join(base_dir, 'cookbooks')]
 
-chef_server_url          'https://huchefserverdonotstoporterminate-wd6zshi9b3iaf5fk.us-east-1.opsworks-cm.io/organizations/default'
+chef_server_url          'https://chef-server1-7vyova5pddfnbdj1.us-east-1.opsworks-cm.io/organizations/default'
 trusted_certs_dir        File.join(base_dir, '.chef', 'ca_certs')

@@ -5,13 +5,13 @@
 # Copyright:: 2020, The Authors, All Rights Reserved.
 
 
-package 'npm' do
-	action :install
-end
+#package 'npm' do
+#	action :install
+#end
 
 
-application '/srv/myapp' do
-	git '/srv/myapp' do
+application '/opt/myapp' do
+	git '/opt/myapp' do
 		repository 'https://github.com/mnazir23/conFusionServer.git'
 	end
 	npm_install

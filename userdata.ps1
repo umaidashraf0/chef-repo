@@ -4,8 +4,8 @@
  ############################
 
  # Required environment variables
- $env:CHEF_SERVER_NAME = "HUChefServerDONOTSTOPORTERMINATE" # Name of your Chef Server
- $env:CHEF_SERVER_ENDPOINT = "huchefserverdonotstoporterminate-wd6zshi9b3iaf5fk.us-east-1.opsworks-cm.io" # FQDN of your Chef Server
+ $env:CHEF_SERVER_NAME = "chef-server1" # Name of your Chef Server
+ $env:CHEF_SERVER_ENDPOINT = "chef-server1-7vyova5pddfnbdj1.us-east-1.opsworks-cm.io" # FQDN of your Chef Server
  $env:REGION = "us-east-1" # Region of your Chef Server (choose one of our supported regions - us-east-1, us-east-2, us-west-1, us-west-2, eu-central-1, eu-west-1, ap-northeast-1, ap-southeast-1, ap-southeast-2)
  $env:CHEF_NODE_NAME = "$(Invoke-WebRequest http://169.254.169.254/latest/meta-data/instance-id  -UseBasicParsing)" # Use EC2 Instance ID as Chef Node Name
 
